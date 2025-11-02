@@ -459,114 +459,81 @@ incubyte/
 └── README.md
 ```
 
-## 🤖 My AI Usage
+---
 
-This section documents how AI tools were leveraged during the development of this project, in accordance with the requirements.
+## 🧠 My AI Usage
 
-### AI Tools Used
+### 🛠️ Tools I Used
 
-#### **Cursor AI (Auto - Agent Router)**
+I used AI tools throughout this project to boost productivity and maintain clean, consistent code. The main ones were:
 
-- **Primary Tool**: Used extensively throughout the entire development process
-- **Usage Context**: Development environment and code generation
+* **Cursor AI (Auto-Agent Router)** – My primary coding assistant, used for project setup, code generation, and debugging.
+* **GPT-5** – Used as a secondary tool for clarifying concepts, exploring different solutions, and improving implementation details.
 
-### How AI Was Used
+---
 
-#### 1. Project Setup and Structure
+### ⚙️ What AI Did vs What I Did
 
-- **AI Assistance**: Generated initial project structure and boilerplate code
-- **Specific Use**: Created package.json files, directory structures, and initial configuration files for both backend and frontend
+#### **Backend (≈ 60% AI / 40% Me)**
 
-#### 2. Backend Development
+**AI helped with:**
 
-- **AI Assistance**:
+* Setting up the Express server and connecting it to MongoDB
+* Generating Mongoose models, controller structures, and validation logic
+* Creating JWT middleware and route protection
+* Writing initial test suites using Jest and Supertest
 
-  - Generated Express server setup with MongoDB connection
-  - Created Mongoose models (User, Sweet) with proper schemas and validation
-  - Implemented JWT authentication middleware and route protection
-  - Built REST API routes for authentication and sweets management
-  - Generated comprehensive test suites following TDD principles
+**I handled:**
 
-- **Specific Examples**:
-  - Asked AI to generate middleware for JWT authentication and role-based authorization
-  - Used AI to create test cases covering all endpoints and edge cases
-  - Leveraged AI for input validation and error handling patterns
+* Designing the database schema and defining relationships
+* Implementing actual business logic and API workflows
+* Configuring authentication and authorization securely
+* Debugging, refining, and testing every endpoint manually
 
-#### 3. Frontend Development
+#### **Frontend (≈ 75% AI / 25% Me)**
 
-- **AI Assistance**:
+**AI helped with:**
 
-  - Generated React component structure and routing setup
-  - Created authentication forms and protected route components
-  - Built API service layer with axios interceptors
-  - Developed Context API for state management
-  - Designed modern UI components with CSS styling
+* Generating React component structure and routing setup
+* Setting up Context API and axios service layer
+* Creating form validation and authentication flow
+* Building responsive layouts and base CSS styling
 
-- **Specific Examples**:
-  - Requested AI to generate React components following best practices
-  - Used AI to implement authentication flow and token management
-  - Leveraged AI for responsive design and CSS styling
+**I handled:**
 
-#### 4. Testing and Quality Assurance
+* Designing the UI/UX flow and choosing the color palette
+* Optimizing performance and ensuring responsiveness
+* Testing and refining user interactions across devices
+* Fine-tuning layout consistency and accessibility
 
-- **AI Assistance**:
+---
 
-  - Generated comprehensive test suites for all backend endpoints
-  - Created test cases covering success scenarios, error handling, and edge cases
-  - Implemented test setup and configuration for Jest and Supertest
+### 💡 How I Used AI
 
-- **Specific Examples**:
-  - Asked AI to write tests for authentication flows including token generation
-  - Used AI to create tests for CRUD operations and inventory management
-  - Leveraged AI to generate tests for role-based access control
+My usual workflow started with prompting AI to scaffold parts of the project — for example, *“create an authentication service with register and login routes.”* Then I’d go through the generated code, understand how it worked, and modify it according to the project’s exact requirements.
 
-#### 5. Documentation
+For debugging, I often pasted error logs and asked for insights. Sometimes the AI’s fix worked perfectly; other times, it pointed me in the right direction, and I solved it manually.
 
-- **AI Assistance**:
-  - Generated comprehensive README documentation
-  - Created API documentation with examples
-  - Wrote installation and usage instructions
+---
 
-### Reflection on AI Usage
+### 🚀 What I Learned
 
-#### Positive Impacts
+AI was a huge time-saver for repetitive or boilerplate-heavy tasks like setting up routes, writing schemas, or configuring tests. It easily sped up my workflow by 3–4x in those areas.
 
-1. **Productivity**: AI significantly accelerated development by generating boilerplate code and standard patterns, allowing focus on business logic and architecture decisions.
+That said, I learned that AI isn’t a replacement for understanding. Every piece of AI-generated code needed review — especially for authentication, validation, and business logic. Balancing AI’s efficiency with manual oversight ensured the final code was secure, optimized, and maintainable.
 
-2. **Best Practices**: AI-generated code followed modern practices and conventions, helping maintain consistency across the codebase.
+The best results came from collaboration — letting AI handle structure and repetition while I focused on design, logic, and making sure everything worked together seamlessly.
 
-3. **Learning**: Interacting with AI provided educational insights into different approaches and patterns.
-
-4. **Quality**: AI-assisted with test case generation and error handling, improving overall code reliability.
-
-#### Challenges and Learnings
-
-1. **Review Required**: All AI-generated code required careful review to ensure it met project requirements and security standards.
-
-2. **Context Understanding**: AI sometimes needed clarification or refinement to match specific project needs.
-
-3. **Over-Reliance Risk**: Had to balance AI assistance with manual implementation to maintain deep understanding of the codebase.
-
-#### Responsible Usage
-
-- **Code Review**: All AI-generated code was thoroughly reviewed and tested before committing
-- **Security**: Manually implemented security-critical sections like authentication and authorization
-- **Testing**: Verified all AI-generated tests actually worked and added additional tests as needed
-- **Understanding**: Ensured deep comprehension of every piece of code in the project
-
-### AI Co-authorship
-
-As per requirements, commits that heavily utilized AI tools include co-author attribution in commit messages:
-
-```
-Co-authored-by: Auto (Cursor AI) <AI@cursor.sh>
-```
+---
 
 ## 📸 Screenshots
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+<img width="1890" height="866" alt="Screenshot 2025-11-02 224152" src="https://github.com/user-attachments/assets/a60fbea9-4ece-4802-b404-6c98e8569506" />
+
+<img width="1909" height="860" alt="Screenshot 2025-11-02 224158" src="https://github.com/user-attachments/assets/21abb036-24c5-4235-9014-6d8c1b29014a" />
+
 
 ### Dashboard - Admin View
 
@@ -574,34 +541,14 @@ Co-authored-by: Auto (Cursor AI) <AI@cursor.sh>
 
 ### Add Sweet Modal
 
-![Add Sweet](screenshots/add-sweet.png)
+<img width="1871" height="857" alt="Screenshot 2025-11-02 224328" src="https://github.com/user-attachments/assets/c955429f-f16a-46d8-a5c4-d0a870cb6f89" />
+
 
 ### Sweet Catalog
 
-![Catalog](screenshots/catalog.png)
+<img width="1763" height="852" alt="Screenshot 2025-11-02 224233" src="https://github.com/user-attachments/assets/74b4cfdc-d780-4ed7-b1a9-57654dd15b7b" />
 
-_(Note: Replace with actual screenshots when available)_
-
-## 🚀 Deployment
-
-### Backend Deployment (Heroku Example)
-
-```bash
-cd backend
-heroku create sweet-shop-api
-heroku config:set MONGODB_URI=your-mongodb-uri
-heroku config:set JWT_SECRET=your-jwt-secret
-git push heroku main
-```
-
-### Frontend Deployment (Vercel Example)
-
-```bash
-cd frontend
-vercel
-```
-
-Update `REACT_APP_API_URL` to point to your deployed backend.
+<img width="1880" height="952" alt="Screenshot 2025-11-02 224345" src="https://github.com/user-attachments/assets/7208060f-fb09-4f38-80a3-4ea8e1a86a15" />
 
 ## 🤝 Contributing
 
@@ -619,7 +566,7 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-Your Name - [Your Email](mailto:your.email@example.com)
+Saurabh Shivam - [My Email](mailto:saurabhshivam012@gmail.com)
 
 ## 🙏 Acknowledgments
 
@@ -634,4 +581,4 @@ For support, email your.email@example.com or open an issue in the repository.
 
 ---
 
-**Built with ❤️ using MERN Stack**
+**Built with ❤️ using MERN Stack by Saurabh Shivam**
