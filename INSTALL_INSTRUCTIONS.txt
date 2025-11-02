@@ -1,0 +1,192 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║   SWEET SHOP MANAGEMENT SYSTEM - INSTALLATION INSTRUCTIONS        ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+This is a MERN Stack (MongoDB, Express, React, Node.js) application.
+
+═══════════════════════════════════════════════════════════════════
+STEP 1: PREREQUISITES
+═══════════════════════════════════════════════════════════════════
+
+Install the following:
+1. Node.js (v14 or higher) - https://nodejs.org/
+2. MongoDB Community Edition - https://www.mongodb.com/try/download/community
+3. Git (optional, if cloning from repo)
+
+═══════════════════════════════════════════════════════════════════
+STEP 2: CLONE OR DOWNLOAD
+═══════════════════════════════════════════════════════════════════
+
+If using Git:
+    git clone <repository-url>
+    cd incubyte
+
+Or extract the project files to a folder.
+
+═══════════════════════════════════════════════════════════════════
+STEP 3: INSTALL BACKEND DEPENDENCIES
+═══════════════════════════════════════════════════════════════════
+
+Open Terminal/Command Prompt and run:
+
+    cd backend
+    npm install
+
+Wait for all packages to install (this may take 1-2 minutes).
+
+═══════════════════════════════════════════════════════════════════
+STEP 4: INSTALL FRONTEND DEPENDENCIES
+═══════════════════════════════════════════════════════════════════
+
+Open a NEW Terminal/Command Prompt and run:
+
+    cd frontend
+    npm install
+
+Wait for all packages to install (this may take 2-3 minutes).
+
+═══════════════════════════════════════════════════════════════════
+STEP 5: CONFIGURE ENVIRONMENT
+═══════════════════════════════════════════════════════════════════
+
+Backend:
+- Navigate to: backend/
+- Copy 'env.example' and create a file named '.env'
+- Open '.env' and set your MongoDB URI (default is fine for local)
+
+Frontend:
+- Navigate to: frontend/
+- Create a file named '.env'
+- Add: REACT_APP_API_URL=http://localhost:5000/api
+
+═══════════════════════════════════════════════════════════════════
+STEP 6: START MONGODB
+═══════════════════════════════════════════════════════════════════
+
+macOS (Homebrew):
+    brew services start mongodb-community
+
+Windows:
+    net start MongoDB
+    OR
+    Open MongoDB Compass or check Services
+
+Linux:
+    sudo systemctl start mongod
+    OR
+    mongod --config /etc/mongod.conf
+
+Verify MongoDB is running:
+- Should not show any error messages
+- Check Services (Windows) or brew services list (macOS)
+
+═══════════════════════════════════════════════════════════════════
+STEP 7: START BACKEND SERVER
+═══════════════════════════════════════════════════════════════════
+
+Open Terminal and run:
+
+    cd backend
+    npm run dev
+
+You should see:
+    ✓ Server is running on port 5000
+    ✓ MongoDB connected successfully
+
+Keep this terminal window open!
+
+═══════════════════════════════════════════════════════════════════
+STEP 8: START FRONTEND APPLICATION
+═══════════════════════════════════════════════════════════════════
+
+Open a NEW Terminal and run:
+
+    cd frontend
+    npm start
+
+Your browser should automatically open to:
+    http://localhost:3000
+
+If not, manually navigate to the URL above.
+
+═══════════════════════════════════════════════════════════════════
+STEP 9: FIRST USE
+═══════════════════════════════════════════════════════════════════
+
+1. Click "Register" to create an account
+2. Choose "User" or "Admin" role
+3. Fill in username, email, and password
+4. Click "Register"
+5. You'll be automatically logged in
+
+═══════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+Problem: "Cannot find module" errors
+Solution: Delete node_modules and reinstall
+    cd backend
+    rm -rf node_modules
+    npm install
+    OR on Windows: rmdir /s node_modules then npm install
+
+Problem: "MongoDB connection error"
+Solution: Ensure MongoDB is running
+    Check: brew services list (macOS)
+    Check: Services in Windows
+    Try: mongod command to start
+
+Problem: "Port 5000 already in use"
+Solution: Change backend port
+    Edit: backend/.env
+    Change: PORT=5000 to PORT=5001
+    Update: frontend/.env
+    Change: REACT_APP_API_URL=http://localhost:5000/api
+      to: REACT_APP_API_URL=http://localhost:5001/api
+
+Problem: CORS errors in browser
+Solution: Check backend is running and .env files are correct
+
+Problem: Tests failing
+Solution: Ensure MongoDB is running and test database is accessible
+
+═══════════════════════════════════════════════════════════════════
+RUNNING TESTS
+═══════════════════════════════════════════════════════════════════
+
+To run backend tests:
+
+    cd backend
+    npm test
+
+To run tests in watch mode:
+
+    npm run test:watch
+
+═══════════════════════════════════════════════════════════════════
+NEXT STEPS
+═══════════════════════════════════════════════════════════════════
+
+1. Read the full README.md for detailed documentation
+2. Check SETUP.md for additional setup details
+3. Review COMMITS.md for commit examples
+4. See QUICK_REFERENCE.md for common commands
+5. Explore PROJECT_SUMMARY.md for architecture overview
+
+═══════════════════════════════════════════════════════════════════
+SUPPORT
+═══════════════════════════════════════════════════════════════════
+
+If you encounter issues:
+1. Check the documentation files
+2. Review error messages carefully
+3. Ensure all prerequisites are installed
+4. Verify MongoDB is running
+5. Check .env files are configured correctly
+
+═══════════════════════════════════════════════════════════════════
+
+Ready to go! Enjoy your Sweet Shop Management System! 🍬
+
+═══════════════════════════════════════════════════════════════════
+
